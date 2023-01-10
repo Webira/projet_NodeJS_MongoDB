@@ -9,7 +9,7 @@
     "build": "tsc",
     "start": "node dist/index.js",
     "start:dev": "ts-node -r dotenv/config src/index.ts",
-    "start:demon": "nodemon -e .ts,.json,.js -w src -x\"npm run start:dev\""
+    "start:demon": "nodemon -e .ts,.json,.js -w src -x \"npm run start:dev\""
   },
   "author": "",
   "license": "ISC",
