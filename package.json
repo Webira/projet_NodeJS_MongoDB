@@ -9,8 +9,11 @@
     "build": "tsc",
     "start": "node dist/index.js",
     "start:dev": "ts-node -r dotenv/config src/index.ts",
-    "start:demon": "nodemon -e .ts,.json,.js -w src -x \"npm run start:dev\""
+    "start:demon": "nodemon -e .ts,.json,.js -w src -x \"npm run start:dev\"",
+    "start:calculator": "nodemon -e .ts,.js,.json -w src -x \"ts-node -r dotenv/config src/exos/calculatrice.ts\""
   },
+
+  "homepage": "https://github.com/Djeg/formation-nodejs-mongo#readme",
   "author": "",
   "license": "ISC",
   "devDependencies": {
