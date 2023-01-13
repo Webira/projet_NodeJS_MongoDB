@@ -1,0 +1,24 @@
+GET http://127.0.0.1:5353/add/100/2
+
+###
+GET http://127.0.0.1:5353/sub/100/2
+
+###
+GET http://127.0.0.1:5353/mul/100/2
+
+###
+GET http://127.0.0.1:5353/div/100/2
+
+###
+DELETE http://127.0.0.1:5353/todos/256546
+
+###
+
+POST http://127.0.0.1:5353/calculatrix
+Content-Type: application/json
+
+{
+  "operation": "add",
+  "x": 10,
+  "y": 20
+}

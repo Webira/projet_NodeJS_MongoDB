@@ -10,9 +10,9 @@
     "start": "node dist/index.js",
     "start:dev": "ts-node -r dotenv/config src/index.ts",
     "start:demon": "nodemon -e .ts,.json,.js -w src -x \"npm run start:dev\"",
-    "start:calculator": "nodemon -e .ts,.js,.json -w src -x \"ts-node -r dotenv/config src/exos/calculatrice.ts\""
+    "start:calculator": "nodemon -e .ts,.js,.json -w src -x \"ts-node -r dotenv/config src/calculatrice.ts\"",
+    "start:todoList": "nodemon -e .ts,.js,.json -w src -x \"ts-node -r dotenv/config src/fastifyExo/todoList.ts\""
   },
-
   "homepage": "https://github.com/Djeg/formation-nodejs-mongo#readme",
   "author": "",
   "license": "ISC",
@@ -23,7 +23,11 @@
     "typescript": "^4.9.4"
   },
   "dependencies": {
+    "@fastify/mongodb": "^6.2.0",
     "dotenv": "^16.0.3",
-    "fastify": "^4.11.0"
+    "fastify": "^4.11.0",
+    "fastify-plugin": "^4.5.0",
+    "zod": "^3.20.2",
+    "zod-to-json-schema": "^3.20.2"
   }
 }

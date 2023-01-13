@@ -3,6 +3,7 @@ import fastify from 'fastify'
 // Création d'une application fastify
 const app = fastify()
 
+    //----------fonctionalité d'application Calculatrice2-query-----------
 // Type définissant les paramètre à envoyer
 // à notre route d'addition
 type AddRoute = {
